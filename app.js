@@ -25,3 +25,19 @@ function reverse(str){
 }
 
 reverse("Hello World");
+
+//Find the longest word in a string
+function findLongestWord(someWords){
+  let stringSplit = someWords.split(' ');
+  let longestWord = 0;
+
+  for(let i = 0; i < stringSplit.length; i++){
+    if(stringSplit[i].length > longestWord){
+      longestWord = stringSplit[i];
+    }
+  }
+
+  return longestWord;
+}
+
+findLongestWord("My name is Michael");
