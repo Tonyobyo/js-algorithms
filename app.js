@@ -19,3 +19,9 @@ function tempConvert(celsius) {
 
 tempConvert(30);
 
+//Reverse a string
+function reverse(str){
+  return str.split('').reverse().join('');
+}
+
+reverse("Hello World");
