@@ -1,3 +1,18 @@
+//Confirm the Ending of a String
+confirmEnding = (aString, ending) => {
+  return aString.endsWith(ending);
+}
+
+confirmEnding('Hello World, my name is Michael', 'Michael');
+
+//Convert Celsius to Fahrenheit
+convertTemperature = (celsius) => {
+  let fahrenheit = celsius * (9/5) + 32;
+  return fahrenheit;
+};
+
+convertTemperature(Math.floor(Math.random * 50));
+
 //Factorialize a Number
 factorial = (aNumber) => {
   if(aNumber < 0){
@@ -11,20 +26,12 @@ factorial = (aNumber) => {
 
 factorial(Math.floor(Math.random * 10));
 
-//Convert Celsius to Fahrenheit
-convertTemperature = (celsius) => {
-  let fahrenheit = celsius * (9/5) + 32;
-  return fahrenheit;
-};
+//Find the Largest Number in an Array
+largestNumber = (arr) => {
+  return arr.map(Function.apply.bind(Math.max, null));
+}
 
-convertTemperature(Math.floor(Math.random * 50));
-
-//Reverse a String
-reverseString = (words) => {
-  return words.split('').reverse.join('');
-};
-
-reverseString("Hello World, my name is Michael!");
+largestNumber([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 
 //Find the Longest Word in a String
 findTheLongestWord = (aSentence) => {
@@ -42,16 +49,9 @@ findTheLongestWord = (aSentence) => {
 
 findLongestWord("Hello World, my name is Michael!");
 
-//Find the Largest Number in an Array
-largestNumber = (arr) => {
-  return arr.map(Function.apply.bind(Math.max, null));
-}
+//Reverse a String
+reverseString = (words) => {
+  return words.split('').reverse.join('');
+};
 
-largestNumber([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
-
-//Confirm the Ending of a String
-confirmEnding = (aString, ending) => {
-  return aString.endsWith(ending);
-}
-
-confirmEnding('Hello World, my name is Michael', 'Michael');
+reverseString("Hello World, my name is Michael!");
