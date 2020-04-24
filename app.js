@@ -1,4 +1,4 @@
-//Factorialize a number
+//Factorialize A Number
 factorial = (aNumber) => {
   if(aNumber < 0){
     return -1;
@@ -11,13 +11,13 @@ factorial = (aNumber) => {
 
 factorial(Math.floor(Math.random * 10));
 
-//Convert Celsius to Fahrenheit
-function tempConvert(celsius) {
+//Convert Celsius To Fahrenheit
+convertTemperature = (celsius) => {
   let fahrenheit = celsius * (9/5) + 32;
   return fahrenheit;
 }
 
-tempConvert(30);
+convertTemperature(Math.floor(Math.random * 50));
 
 //Reverse a string
 function reverse(str){
