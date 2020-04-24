@@ -1,15 +1,15 @@
 //Factorialize a number
-function factorial(num) {
-  if(num < 0) {
+factorial = (aNumber) => {
+  if(aNumber < 0){
     return -1;
-  } else if(num == 0) {
+  }else if(aNumber == 0){
     return 1;
-  } else {
-    return (num * factorial (num - 1));
+  }else{
+    return (aNumber * factorial (aNumber - 1));
   }
 }
 
-factorial(5);
+factorial(Math.floor(Math.random * 10));
 
 //Convert Celsius to Fahrenheit
 function tempConvert(celsius) {
