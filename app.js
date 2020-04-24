@@ -20,27 +20,27 @@ convertTemperature = (celsius) => {
 convertTemperature(Math.floor(Math.random * 50));
 
 //Reverse a string
-function reverse(str){
-  return str.split('').reverse().join('');
+reverseString = (words) => {
+  return words.split('').reverse.join('');
 }
 
-reverse("Hello World");
+reverseString("Hello World, my name is Michael!");
 
 //Find the longest word in a string
-function findLongestWord(someWords){
-  let stringSplit = someWords.split(' ');
-  let longestWord = 0;
+findTheLongestWord = (aSentence) => {
+  let wordSplit = aSentence.split(' ');
+  let wordCounter = 0;
 
-  for(let i = 0; i < stringSplit.length; i++){
-    if(stringSplit[i].length > longestWord){
-      longestWord = stringSplit[i];
+  for(let i = 0; i < wordSplit.length; i++){
+    if(wordSplit[i].length > wordCounter){
+      wordCounter = wordSplit[i].length;
     }
   }
 
-  return longestWord;
+  return wordCounter;
 }
 
-findLongestWord("My name is Michael");
+findLongestWord("Hello World, my name is Michael!");
 
 //Find the largest number in an array
 function largestNumber(arr){
