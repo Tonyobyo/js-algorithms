@@ -1,4 +1,4 @@
-//Factorialize A Number
+//Factorialize a Number
 factorial = (aNumber) => {
   if(aNumber < 0){
     return -1;
@@ -7,26 +7,26 @@ factorial = (aNumber) => {
   }else{
     return (aNumber * factorial (aNumber - 1));
   }
-}
+};
 
 factorial(Math.floor(Math.random * 10));
 
-//Convert Celsius To Fahrenheit
+//Convert Celsius to Fahrenheit
 convertTemperature = (celsius) => {
   let fahrenheit = celsius * (9/5) + 32;
   return fahrenheit;
-}
+};
 
 convertTemperature(Math.floor(Math.random * 50));
 
-//Reverse a string
+//Reverse a String
 reverseString = (words) => {
   return words.split('').reverse.join('');
-}
+};
 
 reverseString("Hello World, my name is Michael!");
 
-//Find the longest word in a string
+//Find the Longest Word in a String
 findTheLongestWord = (aSentence) => {
   let wordSplit = aSentence.split(' ');
   let wordCounter = 0;
@@ -38,12 +38,12 @@ findTheLongestWord = (aSentence) => {
   }
 
   return wordCounter;
-}
+};
 
 findLongestWord("Hello World, my name is Michael!");
 
-//Find the largest number in an array
-function largestNumber(arr){
+//Find the Largest Number in an Array
+largestNumber = (arr) => {
   return arr.map(Function.apply.bind(Math.max, null));
 }
 
