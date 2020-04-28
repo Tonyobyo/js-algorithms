@@ -49,6 +49,17 @@ findTheLongestWord = (aSentence) => {
 
 findLongestWord("Hello World, my name is Michael!");
 
+//Repeat a String
+repeatString = (str, times) => {
+  if(times > 0){
+    return str.repeat(times);
+  }else{
+    return '';
+  }
+};
+
+repeatString("Michael", 3);
+
 //Reverse a String
 reverseString = (words) => {
   return words.split('').reverse.join('');
