@@ -47,7 +47,7 @@ findTheLongestWord = (aSentence) => {
   return wordCounter;
 };
 
-findLongestWord("Hello World, my name is Michael!");
+findLongestWord('Hello World, my name is Michael!');
 
 //Repeat a String
 repeatString = (str, times) => {
@@ -58,11 +58,24 @@ repeatString = (str, times) => {
   }
 };
 
-repeatString("Michael", 3);
+repeatString('Michael', 3);
 
 //Reverse a String
 reverseString = (words) => {
   return words.split('').reverse.join('');
 };
 
-reverseString("Hello World, my name is Michael!");
+reverseString('Hello World, my name is Michael!');
+
+//Truncate a String
+strTruncate = (str, num) => {
+  let strSlice = str.slice(0, num);
+
+  if(str.length >= num){
+    return str;
+  }else{
+    return strSlice;
+  }
+}
+
+strTruncate('Hello, my name is Michael', 10);
