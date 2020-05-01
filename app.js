@@ -60,6 +60,14 @@ repeatString = (str, times) => {
 
 repeatString('Michael', 3);
 
+//Find Array Elements
+findElements = (arr, func) => {
+  let num = 0;
+  return arr.filter(func)[num];
+}
+
+findElements([1, 2, 3, 4], num => num % 2 === 0);
+
 //Reverse a String
 reverseString = (words) => {
   return words.split('').reverse.join('');
