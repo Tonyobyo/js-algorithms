@@ -69,7 +69,7 @@ reverseString('Hello World, my name is Michael!');
 
 //Truncate a String
 strTruncate = (str, num) => {
-  let strSlice = str.slice(0, num);
+  let strSlice = str.slice(0, num) + '...';
 
   if(str.length >= num){
     return str;
