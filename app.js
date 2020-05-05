@@ -1,3 +1,14 @@
+//Check Boolean Primitive
+isBoolean = (value) => {
+  if(bool === true || bool === false){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+isBoolean(null);
+
 //Confirm the Ending of a String
 confirmEnding = (aString, ending) => {
   return aString.endsWith(ending);
@@ -79,7 +90,7 @@ reverseString('Hello World, my name is Michael!');
 strTruncate = (str, num) => {
   let strSlice = str.slice(0, num) + '...';
 
-  if(str.length >= num){
+  if(str.length <= num){
     return str;
   }else{
     return strSlice;
