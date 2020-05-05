@@ -86,6 +86,21 @@ reverseString = (words) => {
 
 reverseString('Hello World, my name is Michael!');
 
+//Title Case a String
+titleCase = (str) => {
+  let lowerCase = str.toLowerCase();
+  let strSplit = str.split(' ');
+  let newStr = '';
+
+  for(let i = 0; i < strSplit.length; i++){
+    newStr += ' ' + strSplit[i].charAt(0).toUpperCase() + strSplit[i].slice(1);
+  }
+
+  return newStr.trim();
+}
+
+titleCase('my name is Michael and I make websites.');
+
 //Truncate a String
 strTruncate = (str, num) => {
   let strSlice = str.slice(0, num) + '...';
