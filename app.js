@@ -1,4 +1,4 @@
-//Check if boolean
+//Check if boolean: return
 isBoolean = (value) => {
   if(value === true || value === false){
     return true;
@@ -76,6 +76,13 @@ findTheLongestWord = (aSentence) => {
 }
 
 findLongestWord('Hello World, my name is Michael!');
+
+//Remove falsy values
+isFalsy = (arr) => {
+  return arr.filter(Boolean);
+}
+
+isFalsy([17, "ate", "", false, 9]);
 
 //Repeat a string
 repeatString = (str, times) => {
