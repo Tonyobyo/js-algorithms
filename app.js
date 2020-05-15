@@ -11,7 +11,7 @@ isBoolean(null);
 
 //Combine Arrays
 combineArrays = (arr1, arr2, n) => {
-  let newArr = arr2.splice();
+  let newArr = arr2.slice();
 
   return newArr.splice(n, 0, ...arr1);
 }
@@ -77,6 +77,23 @@ findTheLongestWord = (aSentence) => {
 
 findLongestWord('Hello World, my name is Michael!');
 
+//Insert into specific index of array
+indexToInsert = (arr, num) => {
+  arr.sort(function(a,b){
+    a - b;
+  });
+
+  for(i = 0; i < arr.length; i++){
+    if(num <= arr[i]){
+      return i;
+    }
+  }
+
+  return arr.length;
+}
+
+indexToInsert([40, 60], 50);
+
 //Remove falsy values
 isFalsy = (arr) => {
   return arr.filter(Boolean);
@@ -89,7 +106,7 @@ repeatString = (str, times) => {
   if(times > 0){
     return str.repeat(times);
   }else{
-    return '';
+    return str;
   }
 }
 
