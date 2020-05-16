@@ -114,7 +114,7 @@ repeatString('Michael', 3);
 
 //Reverse a string
 reverseString = (words) => {
-  return words.split('').reverse.join('');
+  return words.split('').reverse().join('');
 }
 
 reverseString('Hello World, my name is Michael!');
