@@ -94,6 +94,22 @@ indexToInsert = (arr, num) => {
 
 indexToInsert([40, 60], 50);
 
+//Mutation (Compare characters of 2 strings)
+mutation = (arr) => {
+  let word1 = arr[0].toLowerCase().split('');
+  let word2 = arr[1].toLowerCase().split('');
+
+  for(let i = 0; i < word2.length; i++){
+    if(word1.indexOf(word2[i]) === -1){
+      return false;
+    }
+  }
+
+  return true;
+}
+
+mutation(['hello', 'hey']);
+
 //Remove falsy values
 isFalsy = (arr) => {
   return arr.filter(Boolean);
