@@ -126,7 +126,7 @@ repeatString = (str, times) => {
   }
 }
 
-repeatString('Michael', 3);
+repeatString('Beetle Juice!', 3);
 
 //Reverse a string
 reverseString = (words) => {
@@ -134,6 +134,13 @@ reverseString = (words) => {
 }
 
 reverseString('Hello World, my name is Michael!');
+
+//Split and group arrays
+groupArrays = (arr, size) => {
+
+}
+
+groupArrays(['a', 'b', 'c', 'd'], 2);
 
 //Title Case a string
 titleCase = (str) => {
