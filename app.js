@@ -135,9 +135,17 @@ reverseString = (words) => {
 
 reverseString('Hello World, my name is Michael!');
 
-//Split and group arrays
+//Split 1d array into 2d array
 groupArrays = (arr, size) => {
+  let newArray = [];
+  let count = 0;
 
+  for(let i = 0; i < arr.length/size; i++){
+    newArray.push(arr.slice(count, count + size));
+    count += size;
+  }
+
+  return newArray;
 }
 
 groupArrays(['a', 'b', 'c', 'd'], 2);
