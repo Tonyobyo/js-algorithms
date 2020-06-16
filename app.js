@@ -135,6 +135,14 @@ reverseString = (words) => {
 
 reverseString('Hello World, my name is Michael!');
 
+//Sort array alphabetically
+function alphabeticalOrder(arr){
+  return arr.sort(function(a, b){
+    return a > b ? 1 : b > a ? -1 : 0;
+  });
+}
+alphabeticalOrder(['a', 'd', 'c', 'a', 'z', 'g']);
+
 //Split 1d array into 2d array
 groupArrays = (arr, size) => {
   let newArray = [];
